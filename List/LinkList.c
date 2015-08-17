@@ -9,20 +9,19 @@
 #include "LinkList.h"
 
 Link initNode(int number) {
-    Link head = NULL;
-    Link t = malloc(sizeof(Node));
+    Node nodeA;
+    Link head = &nodeA;
+    Link t = head;
     head = t;
     for (int i = 0; i < number; i++) {
         t->next = malloc(sizeof(Node));
+        t = t->next; t->next = NULL;
         t->a = i;
-        t = (t->next);
     }
-    t->next = NULL;
-    
     t = head;
     for (int i = 0; i < 5; i++) {
-        printf("t.a = %d\n",t->a);
         t = t->next;
+        printf("t.a = %d\n",t->a);
     }
     return head;
 }
@@ -81,3 +80,12 @@ void printNode(Link current) {
     }
 }
 
+Link reverseLink(Link head) {
+    Link end = head;
+    Link track = NULL,record = NULL;
+    while (end->next->next != NULL) {
+        track = end->next;
+        end->next = end->next->next;
+    }
+    return NULL;
+}

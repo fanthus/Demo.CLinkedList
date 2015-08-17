@@ -35,5 +35,7 @@ int item(Link current);
 
 void printNode(Link current);
 
+Link reverseLink(Link head);
+
 
 #endif /* defined(__List__LinkList__) */

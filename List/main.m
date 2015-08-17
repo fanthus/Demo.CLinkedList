@@ -15,6 +15,10 @@
 #define LinkNum  5
 
 int main(int argc, const char * argv[]) {
-    Link circleLink = circleList(5);
-    printf("%d",circleNodeNumber(circleLink));
+    Link head = circleList(5);
+    printf("circle node number = %d\n",circleNodeNumber(head));
+    Link randomLink = randomCircleNode(head);
+    printf("head.item = %d\n",head->a);
+    printf("randomLink.item = %d\n",randomLink->a);
+    printf("gap = %d",gapOfCircleLinks(head, randomLink));
 }
