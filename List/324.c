@@ -17,7 +17,9 @@ Link circleList(int number) {
     Link t = NULL,pre = head;
     for (int i = 2; i < number; i++) {
         t = malloc(sizeof(Node));
-        t->a = i;
+        srand(time(NULL) + i);
+        int randomNumber = rand()%100;
+        t->a = randomNumber;
         t->next = head;
         pre->next = t;
         pre = t;
@@ -25,14 +27,22 @@ Link circleList(int number) {
     return head;
 }
 
+void printCircleList(Link head) {
+    Link t = head->next;
+    printf("item = %d\n",head->a);
+    while (t != head) {
+        printf("item = %d\n",t->a);
+        t = t->next;
+    }
+}
+
 Link randomCircleNode(Link head) {
-    srand(time(NULL));
+    srand((unsigned int)time(NULL));
     int randomNumber = rand()%10;
     int i = 0;
     Link t = head;
     while (t->next != NULL) {
         t = t->next;
-        
         if (i == randomNumber) {
             break;
         }
@@ -58,4 +68,13 @@ int gapOfCircleLinks(Link a,Link b) {
         a = a->next;
     }
     return i;
+}
+
+Link insertLinkToAnotherLink(Link a,Link b) {
+    Link randomNextA = a->next;
+    Link randomNextB = b->next;
+    
+    a->next = randomNextB;
+    b->next = randomNextA;
+    return a;
 }

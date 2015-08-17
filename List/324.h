@@ -14,11 +14,14 @@
 
 Link circleList(int number);
 
+void printCircleList(Link head);
+
 Link randomCircleNode(Link head);
 
 int circleNodeNumber(Link circleLink);
 
 int gapOfCircleLinks(Link a,Link b);
 
+Link insertLinkToAnotherLink(Link a,Link b);
 
 #endif /* defined(__List___24__) */
