@@ -2,7 +2,7 @@
 //  LinkList.h
 //  List
 //
-//  Created by xiushan.fan on 16/8/15.
+//  Created by Frank on 16/8/15.
 //  Copyright (c) 2015年 Frank. All rights reserved.
 //
 
@@ -32,6 +32,8 @@ void deleteNext(Link current,Link nodeLink);
 Link next(Link current);
 
 int item(Link current);
+
+void printNode(Link current);
 
 
 #endif /* defined(__List__LinkList__) */

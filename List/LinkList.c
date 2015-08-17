@@ -2,7 +2,7 @@
 //  LinkList.c
 //  List
 //
-//  Created by xiushan.fan on 16/8/15.
+//  Created by Frank on 16/8/15.
 //  Copyright (c) 2015年 Frank. All rights reserved.
 //
 
@@ -72,5 +72,12 @@ Link next(Link current) {
 
 int item(Link current) {
     return current->a;
+}
+
+void printNode(Link current) {
+    while (current != NULL) {
+        printf("item = %d\n",current->a);
+        current = current->next;
+    }
 }
 
