@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		F5450BA91B8029850035A42A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F5450BA81B8029850035A42A /* main.m */; };
 		F5450BB11B80307E0035A42A /* LinkList.c in Sources */ = {isa = PBXBuildFile; fileRef = F5450BAF1B80307E0035A42A /* LinkList.c */; };
+		F5450BB41B886B1B0035A42A /* ArrayStack.c in Sources */ = {isa = PBXBuildFile; fileRef = F5450BB21B886B1B0035A42A /* ArrayStack.c */; };
+		F5450BB71B887E6B0035A42A /* LinkStack.c in Sources */ = {isa = PBXBuildFile; fileRef = F5450BB51B887E6B0035A42A /* LinkStack.c */; };
 		F59E2E0E1B81D9DA0085591E /* 324.c in Sources */ = {isa = PBXBuildFile; fileRef = F59E2E0C1B81D9DA0085591E /* 324.c */; };
 /* End PBXBuildFile section */
 
@@ -29,6 +31,10 @@
 		F5450BA81B8029850035A42A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		F5450BAF1B80307E0035A42A /* LinkList.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = LinkList.c; sourceTree = "<group>"; };
 		F5450BB01B80307E0035A42A /* LinkList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LinkList.h; sourceTree = "<group>"; };
+		F5450BB21B886B1B0035A42A /* ArrayStack.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = ArrayStack.c; sourceTree = "<group>"; };
+		F5450BB31B886B1B0035A42A /* ArrayStack.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ArrayStack.h; sourceTree = "<group>"; };
+		F5450BB51B887E6B0035A42A /* LinkStack.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = LinkStack.c; sourceTree = "<group>"; };
+		F5450BB61B887E6B0035A42A /* LinkStack.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LinkStack.h; sourceTree = "<group>"; };
 		F59E2E0C1B81D9DA0085591E /* 324.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = 324.c; sourceTree = "<group>"; };
 		F59E2E0D1B81D9DA0085591E /* 324.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = 324.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -68,6 +74,10 @@
 				F5450BAF1B80307E0035A42A /* LinkList.c */,
 				F59E2E0C1B81D9DA0085591E /* 324.c */,
 				F59E2E0D1B81D9DA0085591E /* 324.h */,
+				F5450BB21B886B1B0035A42A /* ArrayStack.c */,
+				F5450BB31B886B1B0035A42A /* ArrayStack.h */,
+				F5450BB51B887E6B0035A42A /* LinkStack.c */,
+				F5450BB61B887E6B0035A42A /* LinkStack.h */,
 			);
 			path = List;
 			sourceTree = "<group>";
@@ -130,6 +140,8 @@
 			files = (
 				F59E2E0E1B81D9DA0085591E /* 324.c in Sources */,
 				F5450BA91B8029850035A42A /* main.m in Sources */,
+				F5450BB41B886B1B0035A42A /* ArrayStack.c in Sources */,
+				F5450BB71B887E6B0035A42A /* LinkStack.c in Sources */,
 				F5450BB11B80307E0035A42A /* LinkList.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
